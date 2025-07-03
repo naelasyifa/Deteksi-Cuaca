@@ -1,0 +1,41 @@
+name: fruit_ripeness_detector
+description: "Aplikasi Deteksi Jenis Buah dengan AI"
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ^3.7.0-226.0.dev
+
+dependencies:
+  flutter:
+    sdk: flutter
+  camera: ^0.11.1
+  image_picker: ^1.1.2
+  flutter_image_compress: ^2.4.0
+  path_provider: ^2.1.5
+  tflite_flutter: ^0.11.0
+  image: ^4.5.4
+  typed_data: ^1.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/model_unquant.tflite
+    - assets/labels.txt
+    - assets/weather_icons/dew.png
+    - assets/weather_icons/fogsmog.png
+    - assets/weather_icons/frost.png
+    - assets/weather_icons/glaze.png
+    - assets/weather_icons/hail.png
+    - assets/weather_icons/lightning.png
+    - assets/weather_icons/rainbow.png
+    - assets/weather_icons/rain.png
+    - assets/weather_icons/rime.png
+    - assets/weather_icons/sandstorm.png
+    - assets/weather_icons/snow.png
+    - assets/weather_icons/placeholder.png
